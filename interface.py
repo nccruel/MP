@@ -106,7 +106,7 @@ def incmb(): #COMBINING WORDS MODE
 			if guess in load.d:
 				for i in range(len(guess)):
 					if guess[i] in x:
-						if cmb.scramble.count(guess[i]) < guess.count(guess.gu[i]):
+						if cmb.scramble.count(guess[i]) < guess.count(guess[i]):
 							guess.res = "False"
 							break
 						else:
@@ -119,12 +119,12 @@ def incmb(): #COMBINING WORDS MODE
 				break
 	else:
 		guess.res = "False"
-			if engine.guess.res == "True":
-				correct.append(engine.guess.gu)
-				engine.compute(engine.guess.gu)
+			if guess.res == "True":
+				correct.append(guess)
+				engine.compute(guess)
 				score+=engine.compute.total
 			else:
-				incorrect.append(engine.guess.gu)
+				incorrect.append(guess)
 				life-=1
 	if life < 0:
 		dcmb()
