@@ -1,3 +1,5 @@
+#functions
+
 def load():
 #   file_name = str(input())
     dictionary = open("eng.txt", "r")
